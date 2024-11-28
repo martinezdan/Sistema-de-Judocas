@@ -1,4 +1,4 @@
-﻿bin/
+bin/
 bin/*
 Thumbs.db
 *.class
@@ -8,3 +8,4 @@ DER.mwb.beforefix
 bin/org/fpij/jitakyoei/view/gui/*.jfd
 fpij.db
 test.db
+/target/
