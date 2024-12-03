@@ -1,4 +1,3 @@
-
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
@@ -20,6 +19,7 @@
     </build>
     <dependencies>
         
+        <!-- Dependências já existentes -->
         <dependency>
             <groupId>local</groupId>
             <artifactId>pgslookandfeel</artifactId>
@@ -76,7 +76,6 @@
             <systemPath>${project.basedir}/lib/jcalendar-1.3.3.jar</systemPath>
         </dependency>
 
-        
         <dependency>
             <groupId>local.genesis</groupId>
             <artifactId>genesis-annotation-jdk5</artifactId>
@@ -85,7 +84,6 @@
             <systemPath>${project.basedir}/lib/genesis/dist/genesis-annotation-jdk5-3.2.jar</systemPath>
         </dependency>
 
-        
         <dependency>
             <groupId>local.genesis</groupId>
             <artifactId>genesis-client-swing</artifactId>
@@ -94,7 +92,6 @@
             <systemPath>${project.basedir}/lib/genesis/dist/genesis-client-swing-3.2.jar</systemPath>
         </dependency>
 
-        
         <dependency>
             <groupId>local.genesis</groupId>
             <artifactId>genesis-client</artifactId>
@@ -103,7 +100,6 @@
             <systemPath>${project.basedir}/lib/genesis/dist/genesis-client-3.2.jar</systemPath>
         </dependency>
 
-        
         <dependency>
             <groupId>local.genesis</groupId>
             <artifactId>genesis-shared</artifactId>
@@ -112,21 +108,18 @@
             <systemPath>${project.basedir}/lib/genesis/dist/genesis-shared-3.2.jar</systemPath>
         </dependency>
 
-        
         <dependency>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
             <version>1.2</version>
         </dependency>
 
-        
         <dependency>
             <groupId>commons-beanutils</groupId>
             <artifactId>commons-beanutils</artifactId>
             <version>1.9.4</version>
         </dependency>
 
-        
         <dependency>
             <groupId>local.backport175</groupId>
             <artifactId>backport175</artifactId>
@@ -135,11 +128,24 @@
             <systemPath>${project.basedir}/lib/genesis/lib/backport175/backport175-1.1.RC1-snapshot.jar</systemPath>
         </dependency>
 
-        
         <dependency>
             <groupId>org.openjdk.nashorn</groupId>
             <artifactId>nashorn-core</artifactId>
             <version>15.4</version>
+        </dependency>
+
+        <!-- Dependência do JUnit 5 -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.7.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.7.0</version>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>
